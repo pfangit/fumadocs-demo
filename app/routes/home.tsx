@@ -1,12 +1,13 @@
-import type { Route } from './+types/home';
-import { HomeLayout } from 'fumadocs-ui/layouts/home';
-import { Link } from 'react-router';
-import { baseOptions } from '@/lib/layout.shared';
+import { HomeLayout } from "fumadocs-ui/layouts/home";
+import { Link } from "react-router";
+import { baseOptions } from "@/lib/layout.shared";
+import type { Route } from "./+types/home";
 
+// SEO 信息
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: 'New React Router App' },
-    { name: 'description', content: 'Welcome to React Router!' },
+    { title: "UI & APIS" },
+    { name: "description", content: "Welcome to Fumadocs !" },
   ];
 }
 
@@ -20,7 +21,7 @@ export default function Home() {
         </p>
         <Link
           className="text-sm bg-fd-primary text-fd-primary-foreground rounded-full font-medium px-4 py-2.5"
-          to="/docs"
+          to="/apis"
         >
           Open Docs
         </Link>
